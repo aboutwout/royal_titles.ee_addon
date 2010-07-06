@@ -47,9 +47,7 @@ class Royal_titles
 	  $val = $data['default_entry_title'];
 	  
 	  if( ! $val ) return $data;
-	  
-	  $vars  = array('weblog_id', 'site_id', 'blog_name', 'blog_title', 'blog_lang', 'total_entries', 'last_entry_date', 'last_comment_date', 'last_trackback_date');	  
-	  
+	  	  	  
 	  foreach($data as $key => $var)
 		{
 			$val = str_replace(LD.$key.RD, $var, $val); 
